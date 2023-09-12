@@ -1,12 +1,15 @@
-import { FileVideo, Github, Upload, Wand2 } from 'lucide-react'
+import { FileVideo, Github, Moon, Sun, Upload, Wand2 } from 'lucide-react'
 import { Button } from "./components/ui/button";
 import { Separator } from './components/ui/separator';
 import { Textarea } from './components/ui/textarea';
 import { Label } from './components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './components/ui/select';
 import { Slider } from './components/ui/slider';
+import { useTheme } from './hooks/useTheme';
 
 export function App() {
+  const { theme, toggleTheme } = useTheme()
+
   return (
     <div className="min-h-screen flex flex-col font-body">
       <div className="px-6 py-3 flex items-center justify-between border-b">
@@ -22,6 +25,14 @@ export function App() {
           <Button variant="outline">
             <Github className="w-4 h-4 mr-2" />
             Github
+          </Button>
+
+          <Button
+            variant="secondary"
+            className="flex w-10 p-0"
+            onClick={toggleTheme}
+          >
+            {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </Button>
         </div>
       </div>
