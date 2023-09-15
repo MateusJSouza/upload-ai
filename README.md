@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="upload-ai" title="upload-ai" src="./.github/banner.png">
+  <img alt="upload-ai" title="upload-ai" src="./web/assets/banner.png">
 </h1>
 
 <div id='introducao'>
