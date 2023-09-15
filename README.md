@@ -38,7 +38,12 @@ Repita esse passo para `../web`.
 <h2>Stack utilizada</h2>
 
 **Back-end:**
-🚧 _em construção..._
+- Prisma
+- Fastify
+- Zod
+- OpenAI
+- Dotenv
+- Typescript
 
 **Front-end:**
 - Vite
